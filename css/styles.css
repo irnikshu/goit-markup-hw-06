@@ -276,6 +276,7 @@ img {
   fill: var(--accent-color);
 }
 .modal-close-btn {
+  display: flex;
   border-radius: 50%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -310,7 +311,7 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   padding: 11px 12px 11px 30px;
-  margin-bottom: 28px;
+  /* margin-bottom: 28px; */
   outline: none;
 }
 .modal-text {
@@ -365,14 +366,13 @@ img {
   color: var(--accent-color);
 }
 .policy {
-  margin-top: 30px;
   margin-bottom: 30px;
 }
 .form-field {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 28px;
 }
 .form-field-wrap {
   position: relative;
@@ -380,7 +380,7 @@ img {
 .modal-icon {
   position: absolute;
   left: 10px;
-  top: 30%;
+  top: 50%;
   transform: translateY(-50%);
 }
 .modal-button:hover,
@@ -418,6 +418,9 @@ img {
 .checkbox-policy:checked + .modal-policy::before {
   background-image: url(../image/icon\ check.svg);
   border: none;
+}
+.checkbox-policy:focus + .modal-policy::before {
+  border-color: #000;
 }
 /* Section */
 .section-title {
@@ -742,6 +745,10 @@ footer {
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 .footer-icon {
   fill: #ffffff;
@@ -805,8 +812,8 @@ footer {
   font-size: 16px;
   line-height: 1.25;
   padding-left: 16px;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  /* padding-bottom: 15px;
+  padding-top: 15px; */
   outline: none;
   border-radius: 4px;
 }
