@@ -292,6 +292,10 @@ img {
   align-items: center;
   justify-content: center;
 }
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  fill: var(--accent-color);
+}
 .modal-title {
   font-family: Roboto;
   font-style: normal;
