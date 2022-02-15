@@ -292,8 +292,8 @@ img {
   align-items: center;
   justify-content: center;
 }
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal-close-btn:hover .close-modal,
+.modal-close-btn:focus .close-modal {
   fill: var(--accent-color);
 }
 .modal-title {
@@ -376,7 +376,7 @@ img {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
 }
 .form-field-wrap {
   position: relative;
@@ -423,8 +423,12 @@ img {
   background-image: url(../image/icon\ check.svg);
   border: none;
 }
+/* .checkbox-policy:focus + .modal-policy::before {
+  border-color: var(--accent-color);
+} */
+
 .checkbox-policy:focus + .modal-policy::before {
-  border-color: #000;
+  border-color: var(--accent-color);
 }
 /* Section */
 .section-title {
